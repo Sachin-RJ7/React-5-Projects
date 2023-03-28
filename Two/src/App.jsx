@@ -4,6 +4,7 @@ import { createBrowserRouter,Outlet, RouterProvider} from 'react-router-dom';
 import {ColorModeScript, ChakraProvider, theme } from '@chakra-ui/react'
 import Header from './components/Header';
 import Home from './components/Home';
+import Videos from './components/Videos';
 
 
 const AppLayout = () => {
@@ -24,6 +25,10 @@ const AppRouter = createBrowserRouter([
             path : '/',
             element : <Home />,
         },
+        {
+          path : '/videos',
+          element : <Videos />,
+      },
     ]
 },
 ])
