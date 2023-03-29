@@ -5,6 +5,7 @@ import {ColorModeScript, ChakraProvider, theme } from '@chakra-ui/react'
 import Header from './components/Header';
 import Home from './components/Home';
 import Videos from './components/Videos';
+import VideosCategory from './components/VideosCategory';
 
 
 const AppLayout = () => {
@@ -21,13 +22,17 @@ const AppRouter = createBrowserRouter([
     path : '/',
     element : <AppLayout />,
     children : [
-        {
-            path : '/',
-            element : <Home />,
-        },
-        {
-          path : '/videos',
-          element : <Videos />,
+      {
+          path : '/',
+          element : <Home />,
+      },
+      {
+        path : '/videos',
+        element : <Videos />,
+      },
+      {
+        path : '/videos?category=free',
+        element : <VideosCategory />,
       },
     ]
 },
