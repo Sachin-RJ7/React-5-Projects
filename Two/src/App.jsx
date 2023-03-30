@@ -6,6 +6,7 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Videos from './components/Videos';
 import VideosCategory from './components/VideosCategory';
+import Footer from './components/Footer';
 
 
 const AppLayout = () => {
@@ -13,6 +14,7 @@ const AppLayout = () => {
       <>
         <Header />
          <Outlet />
+        <Footer />
       </>
     )
 }
